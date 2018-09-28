@@ -1,0 +1,21 @@
+syntax="proto3";
+
+package complexpb;
+
+option go_package = "complexpb";
+
+message ComplexMessage {
+
+    string name = 1;
+
+}
+
+service TestService {
+
+    rpc Test(ComplexMessage) returns (DummyMessage) {};
+}
+
+message DummyMessage {
+
+    string name = 1;
+}

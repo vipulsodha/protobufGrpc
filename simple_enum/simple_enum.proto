@@ -1,0 +1,16 @@
+syntax="proto3";
+
+package simple.enum;
+
+message SomeMessage {
+
+    int32 id = 1;
+    SomeEnum e = 2;
+
+}
+
+enum SomeEnum {
+    ONE = 0;
+    TWO = 1;
+    THREE = 2;
+}

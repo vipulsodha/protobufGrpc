@@ -1,0 +1,11 @@
+syntax="proto3";
+
+option go_package="testpackage";
+
+message SimpleMessage {
+    string first_name = 1;
+    string last_name = 2;
+    int32 age = 3;
+}
+
+
